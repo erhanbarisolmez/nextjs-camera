@@ -1,0 +1,2 @@
+video = cv2.VideoCapture('rtsp://admin:Ar969zda89@192.168.1.162/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif')
+#video = cv2.VideoCapture('rtsp://admin:1234567s@192.168.1.165/cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif')

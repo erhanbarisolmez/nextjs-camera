@@ -1,4 +1,16 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+// next.config.js
+const nextConfig = {
+  // next.js ile ilgili özel konfigürasyonları buraya ekleyebilirsiniz
+};
 
-module.exports = nextConfig
+module.exports = {
+  webpack: (config, { isServer }) => {
+    // Sadece sunucu tarafında çalışan kütüphaneleri yükleme
+    if (!isServer) {
+      config.resolve.fallback.fs = false;
+    }
+
+    return config;
+  },
+  ...nextConfig,
+};

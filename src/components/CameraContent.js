@@ -21,9 +21,7 @@ export default function CameraContent() {
 
   // }, [])
 
-  const handleClick = () => {
-    
-  }
+
   const handleAreSelect = (coordinates) => {
     setSelectedCoordinates(coordinates);
     sendCoordinatesToServer(coordinates);
